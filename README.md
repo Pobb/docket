@@ -15,7 +15,7 @@ $ gem install "cli-ui"
 ## How to use ?
 ```shell
 # Bash version
-$ sh docket.sh
+$ bash docket.sh
 ```
 
 ```shell
