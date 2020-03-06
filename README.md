@@ -7,19 +7,25 @@
 
 - Bash version : just put the bash file where you want on your computer
 
-- Ruby version : you have to install "cli-ui" gem : 
+- Ruby version : you have to install "cli-ui" gem :
 ```shell
 $ gem install "cli-ui"
 ```
 
 ## How to use ?
+### Bash
+Using the following command, you'll be connected with the default user defined in the image:
 ```shell
-# Bash version
 $ sh docket.sh
 ```
 
+You can also choose a specific user passing it in argument:
 ```shell
-# Ruby version
+$ sh docket.sh root
+```
+
+### Ruby
+```shell
 $ ruby docket.rb
 ```
 
@@ -29,7 +35,7 @@ $ ruby docket.rb
 
 
 ## What next ?
-Edit your .bashrc or .zshrc file, create an alias to "Docket it" : 
+Edit your .bashrc or .zshrc file, create an alias to "Docket it" :
 ```shell
 # bashrc / zshrc / whatever
 $ alias docket="'/bin/bash docket.sh'"

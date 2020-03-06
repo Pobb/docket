@@ -2,7 +2,7 @@
 
 # This script is based on code by Alexander Klimetschek at
 # https://unix.stackexchange.com/a/415155/310780 (for bash select_option code)
-# and customised by myself to a personal use 
+# and customised by myself to a personal use
 #
 # Render a text based list of available docker containers that can be selected by the
 # user using up, down and enter keys and launch docker exec on this container.
@@ -91,5 +91,10 @@ then
   exit 1
 # else we go to selected container
 else
-  eval "docker exec -it ${lines[$result_index]} bash"
+  if [ -z "$1" ]; then
+    user=""
+  else
+    user="-u $1"
+  fi
+  eval "docker exec -it $user ${lines[$result_index]} bash"
 fi
