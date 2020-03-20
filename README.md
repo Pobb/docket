@@ -22,7 +22,7 @@ $ bash docket.sh
 
 You can also choose a specific user passing it in argument:
 ```shell
-$ sh docket.sh root
+$ bash docket.sh root
 ```
 
 ### Ruby
