@@ -96,5 +96,5 @@ else
   else
     user="-u $1"
   fi
-  eval "docker exec -it $user ${lines[$result_index]} bash"
+  eval "docker exec -it $user ${lines[$result_index]} sh -c '[ -e /bin/bash ] && bash || sh'"
 fi
