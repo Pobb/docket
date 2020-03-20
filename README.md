@@ -16,7 +16,8 @@ $ gem install "cli-ui"
 ### Bash
 Using the following command, you'll be connected with the default user defined in the image:
 ```shell
-$ sh docket.sh
+# Bash version
+$ bash docket.sh
 ```
 
 You can also choose a specific user passing it in argument:
