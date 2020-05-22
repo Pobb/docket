@@ -10,6 +10,7 @@ cntrs.push("Quit")
 
 selected_cntr = CLI::UI::Prompt.ask('On which container would you like to go ?', options: cntrs)
 
+# HERE WE ARE ON STAGING CODE !!!
 if selected_cntr == "Quit"
   exit
 else
