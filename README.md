@@ -39,5 +39,5 @@ $ ruby docket.rb
 Edit your .bashrc or .zshrc file, create an alias to "Docket it" :
 ```shell
 # bashrc / zshrc / whatever
-$ alias docket="'/bin/bash docket.sh'"
+$ alias docket="/bin/bash docket.sh"
 ```
